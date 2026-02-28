@@ -29,26 +29,20 @@ const Footer = () => {
                     <div>
                         <h5 className="font-bold text-slate-900 mb-6">Product</h5>
                         <ul className="space-y-4 text-sm text-slate-500">
-                            <li><a className="hover:text-primary" href="#">Features</a></li>
-                            <li><a className="hover:text-primary" href="#">Security</a></li>
-                            <li><a className="hover:text-primary" href="#">Pricing</a></li>
-                            <li><a className="hover:text-primary" href="#">API Docs</a></li>
+                            <li><Link className="hover:text-primary" to="/features">Features</Link></li>
+                            <li><Link className="hover:text-primary" to="/pricing">Pricing</Link></li>
                         </ul>
                     </div>
                     <div>
-                        <h5 className="font-bold text-slate-900 mb-6">Company</h5>
+                        <h5 className="font-bold text-slate-900 mb-6 mt-20">Company</h5>
                         <ul className="space-y-4 text-sm text-slate-500">
-                            <li><a className="hover:text-primary" href="#">About Us</a></li>
-                            <li><a className="hover:text-primary" href="#">Careers</a></li>
-                            <li><a className="hover:text-primary" href="#">Blog</a></li>
+                            <li><Link className="hover:text-primary" to="/aboutus">About Us</Link></li>
                             <li><Link className="hover:text-primary" to="/contactus">Contact</Link></li>
                         </ul>
                     </div>
                     <div>
-                        <h5 className="font-bold text-slate-900 mb-6">Support</h5>
+                        <h5 className="font-bold text-slate-900 mb-6 mt-10">Support</h5>
                         <ul className="space-y-4 text-sm text-slate-500">
-                            <li><a className="hover:text-primary" href="#">Help Center</a></li>
-                            <li><a className="hover:text-primary" href="#">System Status</a></li>
                             <li><Link className="hover:text-primary" to="/privacypolicy">Privacy Policy</Link></li>
                             <li><Link className="hover:text-primary" to="/terms-conditions">Terms of Service</Link></li>
                         </ul>

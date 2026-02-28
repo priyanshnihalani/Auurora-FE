@@ -4,6 +4,9 @@ import TermsConditions from "./pages/termsconditions";
 import StaticLayout from "./Layout/StaticLayout";
 import PrivacyPolicy from "./pages/privacypolicy";
 import ContactUs from "./pages/contactus";
+import AboutUs from "./pages/aboutus";
+import Features from "./pages/features";
+import Pricing from "./pages/pricing";
 
 const App = () => {
 
@@ -15,7 +18,10 @@ const App = () => {
         { path: "", element: <Home /> },
         { path: "terms-conditions", element: <TermsConditions /> },
         { path: "privacypolicy", element: <PrivacyPolicy /> },
-        { path: "contactus", element: <ContactUs /> }
+        { path: "contactus", element: <ContactUs /> },
+        { path: "aboutus", element: <AboutUs /> },
+        { path: "features", element: <Features /> },
+        { path: "pricing", element: <Pricing /> }
       ]
     }
   ])

@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: transparent;
+}
+
+@theme {
+  --color-primary: #25aff4;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #25aff4 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .cta-gradient {
+    background: linear-gradient(135deg, #25aff4 0%, #a855f7 100%);
+  }
+
+  .text-gradient {
+    color: linear-gradient(135deg, #25aff4 0%, #a855f7 100%);
+  }
+
+  .node-line {
+    stroke: #25aff4;
+    stroke-width: 1;
+    stroke-dasharray: 4;
+    opacity: 0.2;
+  }
+}
